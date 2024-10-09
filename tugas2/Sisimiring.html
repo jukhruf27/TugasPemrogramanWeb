@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sisi Miring Segitiga Siku-Siku</title>
+    <script>
+        function hitungSisiMiring() {
+            const alas = 4; // dalam cm
+            const tinggi = 5; // dalam cm
+            const sisiMiring = Math.sqrt(Math.pow(alas, 2) + Math.pow(tinggi, 2));
+            document.getElementById("hasilSisiMiring").innerHTML = "Sisi miring segitiga: " + sisiMiring.toFixed(2) + " cm";
+        }
+    </script>
+</head>
+<body>
+    <h1>Hitung Sisi Miring Segitiga Siku-Siku</h1>
+    <h2>Diketahui sebuah segitiga siku-siku dengan panjang sisi alas 4 cm dan sisi tinggi 5 cm. Dengan menggunakan rumus Phitagoras, buatlah sebuah program Javascript dan HTML untuk menghitung sisi miring segitiga tersebut dan menampilkannya di layar!</h2>
+    <p id="hasilSisiMiring"></p>
+    <button onclick="hitungSisiMiring()">Hitung Sisi Miring</button>
+</body>
+</html>

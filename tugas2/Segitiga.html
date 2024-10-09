@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Luas Segitiga</title>
+    <script>
+        function hitungLuasSegitiga() {
+            const alas = 8; // dalam cm
+            const tinggi = 5; // dalam cm
+            const luas = 0.5 * alas * tinggi;
+            document.getElementById("hasilLuasSegitiga").innerHTML = "Luas segitiga: " + luas + " cm²";
+        }
+    </script>
+</head>
+<body>
+    <h1>Hitung Luas Segitiga</h1>
+    <h2>Diketahui sebuah segitiga memiliki panjang alas = 8 cm dan tinggi = 5 cm. Buatlah sebuah program dalam Javascript dan HTML untuk menghitung dan menampilkan luas dari segitiga tersebut!</h2>
+    <p id="hasilLuasSegitiga"></p>
+    <button onclick="hitungLuasSegitiga()">Hitung Luas</button>
+</body>
+</html>

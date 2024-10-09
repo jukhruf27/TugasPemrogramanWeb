@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Volume Bola</title>
+    <script>
+        function hitungVolumeBola() {
+            const diameter = 15; // dalam cm
+            const jariJari = diameter / 2;
+            const volume = (4 / 3) * Math.PI * Math.pow(jariJari, 3);
+            document.getElementById("hasilVolumeBola").innerHTML = "Volume bola: " + volume.toFixed(2) + " cm³";
+        }
+    </script>
+</head>
+<body>
+    <h1>Hitung Volume Bola</h1>
+    <h2>Diketahui sebuah bangun ruang berbentuk bola dan memiliki diameter 15 cm. Buatlah sebuah program dalam Javascript dan HTML untuk menghitung dan menampilkan isi (volume) dari bangun ruang bola tersebut!</h2>
+    <p id="hasilVolumeBola"></p>
+    <button onclick="hitungVolumeBola()">Hitung Volume</button>
+</body>
+</html>
