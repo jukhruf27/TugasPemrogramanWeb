@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penghitung Mundur</title>
+</head>
+<body>
+<h1>Penghitung Waktu Mundur</h1>
+<h2 id="penghitung">01:00:00</h2>
+
+<script>
+    let waktuTersisa = 3600000;
+
+    function formatWaktu(ms) {
+        let detik = Math.floor(ms / 1000) % 60;
+        let menit = Math.floor(ms / (1000 * 60)) % 60;
+        let jam = Math.floor(ms / (1000 * 60 * 60));
+
+        return `${String(jam).padStart(2, '0')}:${String(menit).padStart(2, '0')}:${String(detik).padStart(2, '0')}`;
+    }
+
+    function hitungMundur() {
+        for (let i = 0; i <= 3600; i++) {
+            setTimeout(function() {
+                let sisaWaktu = waktuTersisa - (i * 1000);
+
+                if (sisaWaktu > 0) {
+                    document.getElementById("penghitung").innerHTML = formatWaktu(sisaWaktu);
+                } else {
+                    document.getElementById("penghitung").innerHTML = "penghitung telah berakhir";
+                }
+            }, i * 1000);
+        }
+    }
+
+    hitungMundur();
+</script>
+
+</body>
+</html>
