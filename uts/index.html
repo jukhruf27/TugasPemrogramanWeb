@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Produk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Toko Onlen</div>
+        <nav>
+            <a href="index.html">Produk</a>
+            <a href="keranjang.html">Keranjang</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Daftar Produk</h1>
+        <div class="product-list">
+            <div class="product">
+                <img src="gambar/1.jpg" alt="Panci Listrik">
+                <h3>Panci Listrik</h3>
+                <p>Rp 100.000</p>
+                <button onclick="addToCart('Panci Listrik', 100000)">Tambah ke Keranjang</button>
+            </div>
+            <div class="product">
+                <img src="gambar/2.jpg" alt="Logitech Drive Game">
+                <h3>Logitech Drive Game</h3>
+                <p>Rp 1.500.000</p>
+                <button onclick="addToCart('Logitech Drive Game', 1500000)">Tambah ke Keranjang</button>
+            </div>
+            <div class="product">
+                <img src="gambar/3.jpg" alt="Timbangan Digital">
+                <h3>Timbangan Digital</h3>
+                <p>Rp 100.000</p>
+                <button onclick="addToCart('Timbangan Digital', 100000)">Tambah ke Keranjang</button>
+            </div>
+            <div class="product">
+                <img src="gambar/4.jpg" alt="USB Hub">
+                <h3>USB Hub</h3>
+                <p>Rp 150.000</p>
+                <button onclick="addToCart('USB Hub', 150000)">Tambah ke Keranjang</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; UTS Jukhruf Syam Jaruta - 2241404</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

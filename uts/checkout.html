@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Toko Onlen</div>
+        <nav>
+            <a href="index.html">Produk</a>
+            <a href="keranjang.html">Keranjang</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Checkout</h1>
+        <form id="checkout-form" onsubmit="processPayment(event)">
+            <label for="name">Nama Lengkap:</label>
+            <input type="text" id="name" required>
+            <label for="address">Alamat Pengiriman:</label>
+            <textarea id="address" required></textarea>
+            <button type="submit">Bayar</button>
+        </form>
+    </main>
+    
+    <!-- Modal untuk pembayaran berhasil -->
+    <div id="success-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Pembayaran Berhasil!</h2>
+            <p>Terima kasih telah melakukan pembayaran. Pesanan Anda sedang diproses.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; UTS Jukhruf Syam Jaruta - 2241404</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
